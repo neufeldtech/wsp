@@ -25,13 +25,13 @@ docker run -it -p 5000:5000 wsp
 
 Test it out
 
-Visit http://localhost:5000 in your browser to view the index page and instructions.
+Visit [http://localhost:5000](http://localhost:5000) in your browser to view the index page and instructions.
 
 To proxy an image, append the image URI to the end of the host URL:
-```
-http://localhost:5000/https://pixabay.com/static/uploads/photo/2016/09/07/23/10/cat-1652880_960_720.jpg
-``` 
-If the image is scored **not safe for work**, your source image will be replaced. If your image scored as *safe for work*, you will see your original image.
+
+[http://localhost:5000/https://pixabay.com/static/uploads/photo/2016/09/07/23/10/cat-1652880_960_720.jpg](http://localhost:5000/https://pixabay.com/static/uploads/photo/2016/09/07/23/10/cat-1652880_960_720.jpg)
+ 
+If the image is scored **not safe for work**, your source image will be replaced. If your image scored as **safe for work**, you will see your original image.
 
 ## Credit
 
