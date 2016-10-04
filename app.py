@@ -35,3 +35,6 @@ def image(image_url):
         return send_file('nope.jpg')
     else:
         return send_file(buffer_image, mimetype='image/jpeg')
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
