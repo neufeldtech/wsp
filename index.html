@@ -1,0 +1,63 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    WSProxy
+  </title>
+  <style>
+    a {
+      color: #121621;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h1 {
+      font-family: monospace;
+      color: #121621;
+    }
+    p {
+      font-family: monospace;
+      font-size: 1.1em;
+      color: #28353c;
+    }
+    body {
+      background-color: #faebd7;
+    }
+    pre {
+      background-color: #deb887;
+      max-width: 700px;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5px;
+      white-space: pre-wrap;       /* Since CSS 2.1 */
+      white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+    #wrapper {
+      min-width: 300px;
+      max-width: 700px;
+      height: 500px;
+      margin: 75px auto 0px auto;
+    }
+    #footer p {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <h1>WorkSafe Proxy</h1>
+    <p>
+      To use, just add your image URI on the end of the URL. Images that are deemed <strong>not safe for work</strong> will be replaced with an appropriate image.
+      <pre id="demo">http://nannyproxy.com/https://unsplash.it/640/480?random</pre>
+      <script>document.getElementById("demo").innerHTML = window.location.origin + "/https://unsplash.it/640/480?random";</script>
+    </p>  
+</div>
+<div id="footer">
+  <p>
+    An open source project by <a href="http://neufeldtech.com">Neufeldtech</a>
+  </p>
+</div>
+<a href="https://github.com/neufeldtech/wsp"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</body>
+</html>

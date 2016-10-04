@@ -4,25 +4,14 @@ from classify import classify
 from flask import *
 import re
 import requests
-import redis
 
 app = Flask(__name__)
-# redis_server = redis.StrictRedis(host='localhost', port=6379)
+@app.route('/')
+def index():
+    return send_file('index.html')
 
 @app.route('/<path:image_url>')
 def image(image_url):
-    # """Handle image, use redis to cache image."""
-    # cached = redis_server.get(image_url)
-    # if cached:
-    #     buffer_image = StringIO(cached)
-    #     buffer_image.seek(0)
-    # else:
-    #     r = requests.get(image_url)  # you can add UA, referrer, here is an example.
-    #     buffer_image = StringIO(r.content)
-    #     buffer_image.seek(0)
-    #     redis_server.setex(image_url, (60*60*24*7),
-    #                        buffer_image.getvalue())
-    
     try:
         r = requests.get(image_url)
         r.raise_for_status()
